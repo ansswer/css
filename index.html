@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #272A3F;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background-color: #272A3F;
+                color: #fff;
+                padding: 5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-family: Kanit;
+                font-weight: bold;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                left: 0;
+                z-index: 100;
+            }
+    
+            nav {
+                text-align: right;
+            }
+            
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+
+            .logo-container {
+                display: flex;
+                justify-content: center;
+            }
+
+            .logo {
+                display: flex;
+                align-items: center;
+                margin: 0 10px; /* Jarak antara logo */
+                filter: grayscale(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg);
+            }
+
+            .logo img {
+                width: 35px;
+                 height: auto;
+            }
+
+            .button-style {
+                padding: 10px 20px;
+                background-color: #FE5151;
+                color: #ffffff;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+           
+            .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 20px;
+            }
+
+            .about-info {
+                width: 60%;
+            }
+
+            .profile-pic {
+                width: 25%; 
+            }
+
+            .profile-pic img {
+                width: 100%; 
+                height: auto; 
+            }
+
+            .portfolio-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .portfolio {
+                width: calc(33.33% - 10px); 
+                margin-bottom: 20px; 
+                display: flex;
+                justify-content: center;
+            }
+
+            .portfolio img {
+                width: 300px; 
+                height: 300px; 
+                object-fit: cover;
+            }
+
+            #testimonials {
+                padding: 20px;
+                margin: 20px;
+                background-color: #272A3F;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .testimonial-container {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                gap: 20px;
+                overflow-x: auto;
+                padding: 10px;
+            }
+
+            .testimonial {
+                flex: 0 0 auto;
+                width: 300px;
+                background-color: #F9D74C;
+                border-radius: 25px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .testimonial-box {
+                padding: 20px;
+                text-align: center;
+            }
+
+            .image-container img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            .author {
+                margin: 10px 0 5px 0;
+                font-weight: bold;
+            }
+
+            .comment {
+                margin: 0;
+                font-style: italic;
+            }
+
+            #contact {
+                padding: 20px;
+                margin: 20px;
+                background-color: #f4f4f4;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .contact-info {
+                display: flex;
+                flex-wrap: wrap; 
+                justify-content: center; 
+            }
+
+            .social-media {
+                margin-right: 10px; 
+            }
+
+            .social-icons img {
+                width: 30px; 
+                height: 30px; 
+                margin-right: 10px; 
+                filter: grayscale(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg);
+            }
+
+            section {
+                background-color: #fff;
+                margin: 20px;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+        
+        </style>
+    </head>
+<body>
+<!-- Headar Section -->
+<header>
+    <nav>
+    <h2>Anwar Robiansyah</h2>
+    </nav> 
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+<br><br>
+  <!-- Header end -->
+
+<section id="home" style="padding: 20px; margin: 20px; background-color: #272A3F; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);color: #ffffff;">
+    <!-- Konten untuk halaman home -->
+    <div>
+        <div class="image-container">
+            <img src="photoanimasi.png" alt="Profil" style="display: block; border-radius: 60%; width: 150px; height: 170px; object-fit: cover;margin: auto;" />
+        </div>
+        <h1 style="text-align: center; font-family: Kanit; font-weight: bold;font-size: 50px;">Anwar Robiansyah</h1>
+        <h2 style="text-align: center; font-family: Kanit;font-weight: bold;font-size: 30px;">I'am a UI/UX Designer</h2>
+        <div class="logo-container">
+            <div class="logo"><img src="whatsapp.png" alt="Logo1" /></div>
+            <div class="logo"><img src="instagram.png" alt="Logo2"  /></div>
+            <div class="logo"><img src="youtube.png" alt="Logo3"  /></div>
+            <div class="logo"><img src="twitter.png" alt="Logo4" /></div>
+            <div class="logo"><img src="email.png" alt="Logo5" /></div>
+        </div><br>
+        <div style="text-align: center;">
+            <button class="button-style">Hire Me</button>
+        </div>
+    </div>
+</section>
+
+<section id="about" style="padding: 20px; margin: 20px; background-color: #272A3F; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+    <div class="container">
+        <div class="about-info">
+            <h2 style="font-family: Kanit;font-weight: bold;font-size: 30px;color: #ffffff;">Hi , I’ m Anwar Robiansyah</h2>
+            <h1 style="font-family: Kanit;font-weight: bold;font-size: 50px;color: #ffffff;">UI/UX Designer</h1>
+            <p style="font-family: Roboto; font-size: 24px;color: #ffffff;">a passionate informatics student and freelance UI/UX designer. 
+                I believe that technology has the power to create positive change, 
+                and that's why I chose to pursue both of my passions: informatics and interface design.</p>
+        </div>
+        <div class="profile-pic">
+            <img src="profil-pic.png" alt="Profile Picture">
+        </div>
+    </div>
+</section>
+
+<section id="skills" style="padding: 20px; margin: 20px; background-color: #272A3F; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+    <!-- Konten untuk halaman skills -->
+    <h1 style="font-family: Kanit;font-size: 50px; width: 60%;color: #ffffff;"> Proficiencies in UI/UX Design
+        and Computer Science</h1><br>
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <div style="width: 200px; text-align: center;">
+                <img src="ui_ux.png" alt="UI/UX Logo" style="width: 100px; height: 100px;">
+                <p style="color: #ffffff;">Creative and aesthetic User Interface (UI) design. User Experience (UX) optimization to meet user needs.</p>
+            </div>
+            <div style="width: 200px; text-align: center;">
+                <img src="html_css.png" alt="HTML/CSS Logo" style="width: 100px; height: 100px;border-radius: 50%;">
+                <p style="color: #ffffff;">Basic proficiency in HTML and CSS for web development.</p>
+            </div>
+            <div style="width: 200px; text-align: center;">
+                <img src="bootstrap.png" alt="Bootstrap Logo" style="width: 100px; height: 100px;border-radius: 50%;">
+                <p style="color: #ffffff;">Basic proficiency in bootstrap 
+                    for web development.</p>
+            </div>
+        </div>
+</section>
+<section id="portfolio" style="padding: 20px; margin: 20px; background-color: #272A3F; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+    <h2 style="font-family: Kanit;font-weight: bold;color: #ffffff;font-size: 50px;">Portfolio</h2>
+    <!-- Konten untuk halaman portfolio -->
+    <div>
+        <nav style="text-align: left;">
+          <ul style="list-style-type: none; margin: 0;padding: 0;">
+            <li style="display: inline-block;margin-right: 10px; color: #ffffff;"><a href="">Everything</a></li>
+            <li style="display: inline-block;margin-right: 10px;color: #ffffff;"><a href="">Desain</a></li>
+            <li style="display: inline-block;margin-right: 10px;color: #ffffff;"><a href="">Coursework</a></li>
+          </ul>
+          <br>
+        </nav>
+        <div class="portfolio-container">
+            <div class="portfolio"><img src="portfolio1.png" alt="portfolio1" /></div>
+            <div class="portfolio"><img src="portfolio2.png" alt="portfolio2" /></div>
+            <div class="portfolio"><img src="portfolio3.png" alt="portfolio3" /></div>
+            <div class="portfolio"><img src="portfolio4.png" alt="portfolio4" /></div>
+            <div class="portfolio"><img src="portfolio5.png" alt="portfolio5" /></div>
+            <div class="portfolio"><img src="portfolio6.png" alt="portfolio6" /></div>
+        </div>
+        <div style="text-align: center;">
+            <button class="button-style">Load more</button>
+        </div>
+      </div>
+</section>
+
+<section id="testimonials">
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <div class="testimonial-box">
+                <div class="image-container">
+                    <img src="people.png" alt="testimonial1" />
+                </div>
+                <div class="details">
+                    <h3 class="author">John Daniel</h3>
+                    <p class="comment">"Great service and amazing results! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis urna id purus vehicula fermentum sit amet quis libero."</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-box">
+                <div class="image-container">
+                    <img src="people.png" alt="testimonial2" />
+                </div>
+                <div class="details">
+                    <h3 class="author">Ricky Subagja</h3>
+                    <p class="comment">"Highly recommended. Excellent work! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis urna id purus vehicula fermentum sit amet quis libero."</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-box">
+                <div class="image-container">
+                    <img src="people.png" alt="testimonial3" />
+                </div>
+                <div class="details">
+                    <h3 class="author">Laurent Smith</h3>
+                    <p class="comment">"Outstanding service! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis urna id purus vehicula fermentum sit amet quis libero."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" style="padding: 20px; margin: 20px; background-color: #272A3F; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+    <h1 style="color: #ffffff;">Have any project in mind? </h1>
+    <div style="text-align: right;">
+        <button class="button-style">Lets Talk</button>
+    </div>
+    <div class="contact-info">
+        <div class="social-media">
+            <p style="color: #ffffff;">Follow me on:</p>
+            <div class="social-icons">
+                <img src="youtube.png" alt="Youtube">
+                <img src="whatsapp.png" alt="WhatsApp">
+                <img src="instagram.png" alt="Instagram">
+                <img src="twitter.png" alt="Twitter">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+</body>
+</html>
